@@ -21,5 +21,33 @@ function emailvalidation(address)
     var match = check.test(address);
     return match;
 }
-console.log(emailvalidation("akib@9pm.com"));
+console.log(emailvalidation("^akib@9pm.com"));
 
+//Task 4
+var library = [ 
+   {
+       author: 'Bill Gates',
+       title: 'The Road Ahead',
+       readingStatus: true
+   },
+   {
+       author: 'Steve Jobs',
+       title: 'Walter Isaacson',
+       readingStatus: true
+   },
+   {
+       author: 'Suzanne Collins',
+       title:  'Mockingjay: The Final Book of The Hunger Games', 
+       readingStatus: false
+   }];
+
+function gitStatus(index)
+{
+    var status=library[index].readingStatus; //var book=library[index] return book.readingStatus;
+    return status;
+    
+}
+
+console.log(gitStatus(2));
+console.log(gitStatus(0));
+console.log(gitStatus(1));
